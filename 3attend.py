@@ -2,6 +2,9 @@ from datetime import date
 import subprocess
 import os
 
+today= date.today()
+print("Date:",today)
+
 repo_path = "/Users/anya/Downloads/app-dev"
 file_to_change = "attend.txt"
 
@@ -24,5 +27,3 @@ for i in range(3):
 subprocess.run(["git", "push"])
 
 print("Script finished. 6 commits have been pushed.")
-today= date.today()
-print("Date:",today)
